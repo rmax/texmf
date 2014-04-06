@@ -1,0 +1,23 @@
+\ProvidesPackage{algspanish}[2014/04/05 Custom class for setting spanish
+keywords for algorithmicx package]
+
+\DeclareOption*{
+  \PassOptionsToPackage{\CurrentOption}{algorithm}
+}
+\ProcessOptions\relax
+
+\RequirePackage[noend]{algpseudocode}
+\RequirePackage{algorithm}
+
+\floatname{algorithm}{Algoritmo}
+\algrenewcommand\algorithmicrequire{\textbf{Entrada:}}
+\algrenewcommand\algorithmicensure{\textbf{Salida:}}
+\algrenewcommand\algorithmicfor{\textbf{para}}
+\algrenewcommand\algorithmicdo{\textbf{hacer}}
+\algrenewcommand\algorithmicif{\textbf{si}}
+\algrenewcommand\algorithmicthen{\textbf{entonces}}
+\algrenewcommand\algorithmicelse{\textbf{sino}}
+\algrenewcommand\algorithmicend{\textbf{fin}}
+\algrenewcommand\algorithmicfunction{\textbf{funci\'on}}
+\algrenewcommand\algorithmicprocedure{\textbf{subrutina}}
+\algrenewcommand\algorithmicreturn{\textbf{retornar}}

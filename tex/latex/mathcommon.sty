@@ -1,0 +1,129 @@
+\ProvidesPackage{mathcommon}
+
+\newcommand{\twopartdef}[4]
+{
+  \begin{cases}
+    #1 & \mbox{si } #2 \\
+    #3 & \mbox{si } #4
+  \end{cases}
+}
+
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand\norm[1]{ \|#1\| }
+\newcommand\dotprod[2]{\lbrace #1, #2 \rbrace}
+
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+\newcommand{\bbS}{\mathbb{S}}
+\newcommand{\bbX}{\mathbb{X}}
+\newcommand{\bbY}{\mathbb{Y}}
+
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\ensuremath{ \mathcal{C} } }
+\newcommand{\calE}{\ensuremath{ \mathcal{E} } }
+\newcommand{\calP}{\ensuremath{ \mathcal{P} } }
+\newcommand{\calS}{\ensuremath{ \mathcal{S} } }
+\newcommand{\calU}{\mathcal{U}}
+
+\newcommand{\bigO}{\ensuremath{ \mathcal{O} } }
+
+
+\DeclareMathOperator{\kernel}{Ker}
+\DeclareMathOperator{\image}{Im}
+\DeclareMathOperator{\sub}{Sub}
+\DeclareMathOperator{\id}{Id}
+\DeclareMathOperator{\dist}{d}
+\DeclareMathOperator{\Iso}{Iso}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\Vol}{Vol}
+\DeclareMathOperator{\me}{e}
+\DeclareMathOperator{\mi}{i}
+
+\DeclareMathOperator{\mcd}{mcd}
+\DeclareMathOperator{\mcm}{mcm}
+
+\DeclareMathOperator{\arr}{arr}
+\DeclareMathOperator{\eps}{eps}
+\DeclareMathOperator{\card}{card}
+
+\newcommand{\commasep}{\,,\,}
+\newcommand{\colonsep}{\::\:}
+\newcommand{\tupleone}[1]{ \left( #1 \commasep #1 \right) }
+\newcommand{\tuple}[2]{ \left( #1 \commasep #2 \right) }
+\newcommand{\triplet}[3]{ \left( #1 \commasep #2 \commasep #3 \right) }
+\newcommand{\setdeff}[2]{\ensuremath{%
+  \left\lbrace\,
+    #1 \colonsep #2
+  \,\right\rbrace
+}}
+
+\newcommand{\setdef}[1]{\ensuremath{%
+  \left\{ \, #1 \, \right\} %
+}}
+\newcommand{\setprop}[2]{\ensuremath{%
+  \left\{ \, #1 \, \colon \, #2 \, \right\} %
+}}
+\newcommand{\setn}[2]{\ensuremath{%
+  \setdef{#1_1, \dotsc, #1_#2}
+}}
+\newcommand{\setnz}[2]{\ensuremath{%
+  \setdef{#1_0, \dotsc, #1_#2}
+}}
+\newcommand{\setinf}[1]{\ensuremath{%
+  \setdef{#1_1, #1_2, \dotsc}%
+}}
+\newcommand{\varcount}[1]{\ensuremath{%
+  1,\dotsc,#1%
+}}
+\newcommand{\vrow}[2]{\ensuremath{%
+  \left( #1_1 \, \dotsc \, #1_{#2} \right)%
+}}
+\newcommand{\vrowc}[2]{\ensuremath{%
+  \left( #1_1 , \dotsc , #1_{#2} \right)%
+}}
+\newcommand{\vcol}[2]{\ensuremath{%
+  \begin{pmatrix}
+    #1_1
+    \\ \vdots
+    \\ #1_{#2}
+  \end{pmatrix}
+}}
+
+\newcommand{\map}[3]{%
+  \ensuremath{#1 \colon #2 \to #3}%
+}
+\newcommand{\mapto}[3]{%
+  \ensuremath{#1 \colon #2 \mapsto #3}%
+}
+
+\newcommand\mapdef[5]{
+  \begin{align*}
+    #1 \colon #2 &\to #3 \\
+              #4 &\mapsto #5
+  \end{align*}
+}
+\newcommand\emapdef[5]{
+    #1 \colon #2 &\to #3 \\
+              #4 &\mapsto #5
+}
+\newcommand{\inv}[1]{ {#1}^{-1} }
+
+\newcommand{\innprod}[2]{\ensuremath{%
+  \langle #1 , #2 \rangle %
+}}
+\newcommand{\gen}[1]{\ensuremath{%
+  \langle #1 \rangle %
+}}
+
+\renewcommand{\bar}[1]{\ensuremath{ \overline{#1}} }
+\renewcommand{\Vec}[1]{\ensuremath{ \overrightarrow{#1}} }
+\newcommand{\df}[1]{\ensuremath{%
+  \,\operatorname{d}\!#1
+}}
+
+
