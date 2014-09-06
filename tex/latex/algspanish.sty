@@ -1,12 +1,16 @@
 \ProvidesPackage{algspanish}[2014/04/05 Custom class for setting spanish
 keywords for algorithmicx package]
 
+\DeclareOption{noend}{
+  \PassOptionsToPackage{\CurrentOption}{algpseudocode}
+}
+
 \DeclareOption*{
   \PassOptionsToPackage{\CurrentOption}{algorithm}
 }
 \ProcessOptions\relax
 
-\RequirePackage[noend]{algpseudocode}
+\RequirePackage{algpseudocode}
 \RequirePackage{algorithm}
 
 \floatname{algorithm}{Algoritmo}
